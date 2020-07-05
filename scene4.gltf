@@ -1,4 +1,8 @@
 {
+  "asset": {
+        "generator": "COLLADA2GLTF",
+        "version": "2.0"
+    },
   "accessors": [
     {
       "bufferView": 3,
