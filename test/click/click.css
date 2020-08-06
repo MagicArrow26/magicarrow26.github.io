@@ -16,7 +16,7 @@ a-scene{
     width: 50%;
     height: 60%;
     float:left;
-    z-index:2;
+    z-index:99;
     position:absolute;
 }
 
