@@ -1,0 +1,90 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#gauche {
+    background-color: #f00;
+    width: 50%;
+    height: 60%;
+    float:left;
+}
+
+#droite {
+    background-color: #f99;
+    width: 50%;
+    height: 60%;
+    margin-left:50%;  
+}
+
+#bas {
+    background-color: #f55;
+    width: 100%;
+    height: 40%;
+}
+
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+a.trigger_popup {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+.liste {
+	font-size: 20px;
+	text-align:center;
+}
+/* Popup box BEGIN */
+
+.hover_bkgr{
+    background:rgba(0,0,0,.4);
+    cursor: pointer;
+    display:none;
+    height:100%;
+    position:fixed;
+    text-align:center;
+    top:0;
+    width:100%;
+    z-index:10000;
+}
+.hover_bkgr .helper{
+    display:inline-block;
+    height:100%;
+    vertical-align:middle;
+}
+.hover_bkgr > div {
+    background-color: #fff;
+    box-shadow: 10px 10px 60px #555;
+    display: inline-block;
+    height: auto;
+    max-width: 251px;
+    min-height: 100px;
+    vertical-align: middle;
+    width: 60%;
+    position: relative;
+    border-radius: 8px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-top: 8px;
+}
+
+.trigger_popup {
+    cursor: pointer;
+    font-size: 20px;
+    
+    display: inline-block;
+    font-weight: bold;
+}
+/* Popup box BEGIN */
+

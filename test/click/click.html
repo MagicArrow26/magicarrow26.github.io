@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>	
+	<link rel="stylesheet" type="text/css" href="click.css?x=1" />
+	<script src="https://www.google.com/jsapi"></script>
+	<title>Popup box</title>
+</head>
+<body>
+
+<div id="gauche">
+    <a class="trigger_popup"></a>
+</div>
+<div id="droite">
+    <a href="https://google.fr" class="fill-div"></a>
+</div>
+<div id="bas">
+    <a href="https://google.fr" class="fill-div"></a>
+</div>
+
+<div class="hover_bkgr">
+    <span class="helper"></span>
+    <div>
+        <div class="popupCloseButton"></div>
+         
+		<ol class="liste">
+		        <a href="https://instagram.com">Twitter</a> <br> <br>
+		        <a href="https://instagram.com">Instagram</a> <br> <br>
+		        <a href="https://instagram.com">Maps</a> <br> <br>
+		        <a href="tel:+33650190950">Phone</a>
+		        
+		</ol>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+
+	$(window).load(function () {
+    $(".trigger_popup").click(function(){
+       $('.hover_bkgr').show();
+    });
+    $('.hover_bkgr').click(function(){
+        $('.hover_bkgr').hide();
+    });
+    
+});
+</script>
+
+
+</body>
+</html>
