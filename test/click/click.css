@@ -7,10 +7,15 @@ body {
   padding: 0;
 }
 
+a-scene{
+    z-index:1;
+}
+
 #gauche {
     width: 50%;
     height: 60%;
     float:left;
+    z-index:2;
 }
 
 #droite {
