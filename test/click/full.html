@@ -12,8 +12,29 @@
     <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
     <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
     <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
-<body>
+	
+ <body style='margin : 0px; overflow: hidden;'>
 
+ <a-scene embedded vr-mode-ui="enabled: false" arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
+
+        <a-assets>
+            <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/MagicArrow26/magicarrow26.github.io/master/commandes/carte_fiverr.gltf"></a-asset-item>
+        </a-assets>
+
+        <a-marker id="animated-marker" type='barcode' value='57'>
+            <a-entity
+                animation-mixer
+                gltf-model="#animated-asset"
+                scale="1.1 1.1 1.1"
+                position="0.3 0.4 0"
+                >
+            </a-entity>
+        </a-marker>
+
+        <a-entity camera></a-entity>
+        </a-scene>	
+	 
+	 
 <div id="gauche">
     <a class="trigger_popup"></a>
 </div>
