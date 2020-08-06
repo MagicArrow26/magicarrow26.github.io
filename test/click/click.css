@@ -26,6 +26,7 @@ body {
     float:right;
     z-index:2;
     position:absolute;
+    left:50%
 }
 
 #bas {
@@ -35,6 +36,7 @@ body {
     margin-bottom:60%;
     z-index:2;
     position:absolute;
+    top:60%;
 }
 
 a.fill-div {
