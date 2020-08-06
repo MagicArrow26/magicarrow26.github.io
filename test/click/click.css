@@ -12,6 +12,21 @@ a-scene{
     position:absolute;
 }
 
+a-assets{
+    z-index:1;
+    position:absolute;
+}
+
+a-marker{
+    z-index:1;
+    position:absolute;
+}
+
+a-entity{
+    z-index:1;
+    position:absolute;
+}
+
 #gauche {
     width: 50%;
     height: 60%;
