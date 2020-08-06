@@ -9,6 +9,7 @@ body {
 
 a-scene{
     z-index:1;
+    position:absolute;
 }
 
 #gauche {
@@ -16,6 +17,7 @@ a-scene{
     height: 60%;
     float:left;
     z-index:2;
+    position:absolute;
 }
 
 #droite {
