@@ -17,7 +17,7 @@ body {
 /* Zones clickables */
 
 #gauche {
-    width: 53%;
+    width: 55%;
     height: 70%;
     float:left;
     z-index:2;
@@ -25,7 +25,7 @@ body {
 }
 
 #droite {
-    width: 47%;
+    width: 45%;
     height: 70%;
     float:right;
     z-index:2;
