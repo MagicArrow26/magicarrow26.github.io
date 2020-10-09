@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>    
+        <link rel="stylesheet" type="text/css" href="index_xdhololighting.css?x=1" />
+        <script src="https://www.google.com/jsapi"></script>
+        <meta name="viewport" content="width=device-width, user-scalable=yes, minimum-scale=1.0, maximum-scale=1.0">
+        <title>XD HoloLighting Studio's Business Card</title>
+    </head>
+
+        <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+        <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
+        <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+        
+
+
+    <body style='margin : 0px; overflow: hidden;'>
+
+        <div style="position:relative; height:100%">
+            
+            <a-scene class="scene" embedded vr-mode-ui="enabled: false" arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
+                 
+                <a-assets>
+                        <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/MagicArrow26/magicarrow26.github.io/master/commandes/xdhololighting/xdhololighting4.gltf"></a-asset-item>
+                </a-assets>
+
+              
+                <a-marker id="animated-marker" preset='custom' type='pattern'  url='https://raw.githubusercontent.com/MagicArrow26/magicarrow26.github.io/master/commandes/xdhololighting/pattern-logonb2.patt'>
+                    <a-entity
+                        animation-mixer
+                        gltf-model="#animated-asset"
+                        scale="0.7 0.7 0.7"
+                        position="0.3 0 1"
+                        >
+                    </a-entity>
+                </a-marker>
+                 
+                <a-entity camera></a-entity>
+
+            </a-scene>
+
+
+
+            <div id="gauche">    
+                <a class="trigger_popup"></a>
+            </div>
+            <div id="droite">
+                <a href="https://www.google.fr/maps/place/60+Paya+Lebar+Rd,+Paya+Lebar+Square,+Singapore+409051/@1.3191725,103.8903676,17z/data=!3m1!4b1!4m5!3m4!1s0x31da1818677e43ff:0x9053328cc088d24b!8m2!3d1.3191725!4d103.8925563" class="fill-div" target="_blank"></a>
+            </div>
+            <div id="bas">
+                <a href="fb://page/111833323698712" class="fill-div" target="_blank"></a>
+            </div>
+
+
+            <div class="hover_bkgr">
+                <span class="helper"></span>
+
+                <div>
+                    <div class="popupCloseButton"></div>
+                     
+                    <ol class="liste">
+                            <a href="tel:+6591277067" target="_blank">Call</a> <br> <br>
+                            <a href=" https://wa.me/6591277067" target="_blank">WhatsApp</a> <br> <br>
+                            <a href="mailto:xdhololightingstudio@gmail.com">E-Mail</a> <br> <br>
+                            <a href="https://www.instagram.com/xdhololightingstudio" target="_blank">Instagram</a>
+                            
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script type="text/javascript">
+
+            $(window).load(function () {
+            $(".trigger_popup").click(function(){
+               $('.hover_bkgr').show();
+            });
+            $('.hover_bkgr').click(function(){
+                $('.hover_bkgr').hide();
+            });
+            
+            });
+        </script>
+
+    </body>
+</html>
